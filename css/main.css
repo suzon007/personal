@@ -126,6 +126,7 @@ h6 {
 ========================================================================== */
 .about{
 	margin-top: -20px; 
+	background: #D9B95F url(../img/backgrounds/texture4.png) repeat;
 }
 .about-header{
 	text-align: center;
@@ -282,6 +283,7 @@ h6 {
 ========================================================================== */
 .works{
 	margin-top: -20px;
+	background: #D9B95F url(../img/backgrounds/texture2.png) repeat;;
 }
 .works-header{
 	text-align: center;
@@ -324,8 +326,9 @@ h6 {
 }
 .thumbnail{
 	overflow: hidden;
-	border: 5px solid #C3332B;
-	background-color: #F2E0C2;
+	border: 2px solid #C3332B;
+	
+	background: #ddc06e;
 	border-radius: 0;
 }
 .thumbnail img{
