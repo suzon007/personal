@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author: Zahidul Islam Suzon
+   Version: 1.0
+   Date: 19-03-2017
+========================================================================== */
 
 /* ==========================================================================
    Fonts
@@ -89,6 +94,10 @@ h6 {
 	font-size: 30px;
 	color: #D9B95F !important;
 }
+.navbar-fixed-top .active a { 
+    background: transparent !important;
+    color: #C3332B !important;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -121,6 +130,108 @@ h6 {
 .element{
 	color: #21232C;
 }
+/* ==========================================================================
+   Secondary Menu
+========================================================================== */
+.float-nav {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 3;
+}
+.float-nav > a.menu-btn {
+  cursor: pointer; 
+  cursor: hand;
+  text-decoration: none;
+  display: block;
+  background-color: #cc3333;
+  color: white;
+  padding: 17px 19px 12px 19px;
+  text-align: center;
+  box-shadow: 2px 2px 8px #000;
+  border-radius: 300px;
+}
+.float-nav > a.menu-btn.active {
+  transition: background-color 250ms linear;
+  background-color: transparent;
+  box-shadow: none;
+}
+.float-nav > a.menu-btn.active > ul > li.line:nth-child(1) {
+  border-width: 2px;
+  -moz-transform: rotate(45deg) translate(4px, 6px);
+  -ms-transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+  transform: rotate(45deg) translate(4px, 6px);
+}
+.float-nav > a.menu-btn.active > ul > li.line:nth-child(2) {
+  visibility: hidden;
+}
+.float-nav > a.menu-btn.active > ul > li.line:nth-child(3) {
+  border-width: 2px;
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+.float-nav > a.menu-btn > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.float-nav > a.menu-btn > ul > li.line {
+  border: 1px solid white;
+  width: 20px;
+  margin-bottom: 7px;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  z-index: 3;
+}
+.float-nav > a.menu-btn > .menu-txt {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.main-nav {
+	z-index: 2;
+  	display: none;
+  	opacity: 0;
+  	font-family: sans-serif;
+  	position: fixed;
+  	bottom: 80px;
+  	right: 20px;
+  	transition: opacity 250ms;
+}
+.main-nav.active {
+  display: block;
+  opacity: 1;
+  transition: opacity 250ms;
+}
+.main-nav > ul {
+  width: 100%;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #cc3333;
+  box-shadow: 2px 2px 8px #000;
+  border-radius: 3px 3px 33.5px 3px;
+}
+.main-nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  font-weight: 200;
+  padding: 18px 80px 18px 18px;
+  color: white;
+}
+.main-nav > ul > li > a:hover {
+  font-weight: 400;
+}
+
+
 /* ==========================================================================
    About Section
 ========================================================================== */
@@ -164,6 +275,7 @@ h6 {
 	line-height: normal;
 	color: #21232C;
 }
+
 
 
 /* ==========================================================================
@@ -362,7 +474,7 @@ h6 {
    Contact Section
 ========================================================================== */
 .contact{
-	margin-top: -20px;
+	margin-top: -22px;
 	background-color: #21232C;
     background-image: url(../img/backgrounds/contact_texture.png);
     background-size: 100% 100%;
@@ -607,4 +719,103 @@ section#contact .form-group input, section#contact .form-group textarea {
 		margin-left: 0;
 	}
 
+}
+
+/* ==========================================================================
+   Responsive
+========================================================================== */
+
+@media only screen and (max-width: 1390px) {
+
+	.header-content{
+		padding-top: 200px;
+	}
+	.hello{
+	font-size: 35px;
+	}
+	.iAmZis{
+		font-size: 100px;
+	}
+	.zis{
+		color: #C3332B;
+	}
+	.iDo{
+		font-size: 40px;
+	}
+
+	.about-me{
+		padding: 100px 50px 0px;
+		font-size: 28px;
+	}
+}
+
+@media only screen and (max-width: 1230px) {
+
+	.about-me{
+		padding: 120px 50px 0px;
+		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width: 1070px) {
+
+	.about-me{
+		padding: 80px 50px 0px;
+		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 990px) {
+
+	.hello{
+	font-size: 35px;
+	}
+	.iAmZis{
+		font-size: 100px;
+	}
+	.zis{
+		color: #C3332B;
+	}
+	.iDo{
+		font-size: 40px;
+	}
+
+	.about-me{
+		padding: 80px 50px 80px;
+		font-size: 22px;
+	}
+}
+
+/*NAVBAR*/
+@media only screen and (max-width : 768px) {
+	.navbar-header{
+		border: none;
+	}
+	.navbar-header button{
+		background:  #C3332B;
+		border: none;
+	}
+
+	.navbar-header button:hover{
+		background:  #D9B95F !important;
+		border: none;
+		transition: .3s;
+	}
+	.navbar-header button:visited{
+		background:  #C3332B !important;
+	}
+	.navbar-header button:active{
+		background:  #C3332B !important;
+	}
+	.navbar-header button span{
+		background-color: #21232C !important;
+	}
+	.navbar-collapse{
+		background-color: #21232C;
+		border-top: none;
+		border-bottom: 5px solid #a58427 !important; 
+
+	}
+	.navbar-nav{
+		padding-right: 45%;
+	}
 }

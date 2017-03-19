@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
                 
       <header class="primary-header">
         <!-- Navbar -->
         <nav class="navbar navbar-default navbar-fixed-top center mynav" id="pageTop">
-          <div class="container">
+          <div class="container nav-wrapper">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -28,12 +28,12 @@
               <a class="navbar-brand" href="#">ZIS</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse navbar-inner">
-              <ul class="nav navbar-nav nav-center pull-right">
-                <li><a class="menuUrl" id="menuUrlId" href="/about"><b>ABOUT</b></a></li>
-                <li><a class="menuUrl" id="menuUrlId" href="/services"><b>SKILLS</b></a></li>
-                <li><a class="menuUrl" id="menuUrlId" href="/arcurviaBlog"><b>WORKS</b></a></li>
-                <li><a class="menuUrl" id="menuUrlId" href="/careers"><b>CONTACT</b></a></li>
-                <li><a class="menuUrl" id="menuUrlId" href="/contact"><b>BLOG</b></a></li>
+              <ul class="nav navbar-nav nav-center pull-right navbar-ul">
+                <li><a class="menuUrl" id="menuUrlId" href="#about"><b>ABOUT</b></a></li>
+                <li><a class="menuUrl" id="menuUrlId" href="#skills"><b>SKILLS</b></a></li>
+                <li><a class="menuUrl" id="menuUrlId" href="#works"><b>WORKS</b></a></li>
+                <li><a class="menuUrl" id="menuUrlId" href="#contact"><b>CONTACT</b></a></li>
+                <li><a class="menuUrl" id="menuUrlId" href="http://blog.zisuzon.com/" target="_blank"><b>BLOG</b></a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -45,10 +45,30 @@
           <h3 class="iDo">I AM A <span class="element"></span></h3>
           
         </div>
+        <!-- ================================= -->
+        <div class="float-nav">
+          <a  class="menu-btn">
+            <ul>
+              <li class="line"></li>
+              <li class="line"></li>
+              <li class="line"></li>
+            </ul>
+            <!-- <div class="menu-txt">menu</div> -->
+          </a>
+        </div>
+
+        <div class="main-nav">
+          <ul>
+            <li><a href="img/CV/resume.pdf">CV</a></li>
+            <li><a href="https://github.com/suzon007/">FORK ME ON GITHUB</a></li>
+            <li><a href="https://www.facebook.com/mnishihan">INSPIRATION</a></li>
+          </ul>
+        </div>
+        <!-- ================================= -->
 
       </header>
 
-      <section class="about">
+      <section class="about" id="about">
 
         <header class="about-header">
           <h2>WHO AM I?</h2>
@@ -83,7 +103,7 @@
 
       </section>
 
-      <section class="skills ">
+      <section class="skills" id="skills">
 
         <header class="skills-header">
             <h2>COMFORT ZONE</h2>
@@ -147,7 +167,7 @@
 
       </section>
 
-      <section class="works">
+      <section class="works" id="works">
         <header class="works-header">
             <h2>MY LATEST WORKS</h2>
         </header>
@@ -160,12 +180,12 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i39.tinypic.com/2qxpdi1.jpg" alt=""></a>
+                      <a href="http://iubenv.zisuzon.com/"><img src="img/projects/iubenv.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>IUB Project</h3>
+                          <p>School of Environmental Science and Management's website.</p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://iubenv.zisuzon.com/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -173,12 +193,12 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i41.tinypic.com/6rn7np.jpg" alt=""></a>
+                      <a href="http://omegapointbd.com/"><img src="img/projects/omega.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Omega Point</h3>
+                          <p>Omega Point Coaching Management System</p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://omegapointbd.com/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -186,12 +206,12 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i41.tinypic.com/6rn7np.jpg" alt=""></a>
+                      <a href="http://review-bd.net/"><img src="img/projects/reviewbd.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Undergrad project</h3>
+                          <p>Closed down due to lack of funding.</p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://review-bd.net/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -199,12 +219,12 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i39.tinypic.com/2qxpdi1.jpg" alt=""></a>
+                      <a href="http://exploitbd.com/"><img src="img/projects/exploit.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Exploit Bike Co.</h3>
+                          <p>Showcase website for Exploit Bike Company.</p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://exploitbd.com/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -213,12 +233,12 @@
             <div class="row text-center">
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i41.tinypic.com/6rn7np.jpg" alt=""></a>
+                      <a href="http://zisuzon.com/projects/ingenious/"><img src="img/projects/ingenious.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Workshop for Ingenious</h3>
+                          <p>A demo for Ingenious Company </p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://zisuzon.com/projects/ingenious/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -226,12 +246,12 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i39.tinypic.com/2qxpdi1.jpg" alt=""></a>
+                      <a href="http://zisuzon.com/projects/staffindia/"><img src="img/projects/staffindia.jpg" alt="Staff India"></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Workshop for Staff India</h3>
+                          <p>Job competetion for staff india company. Which I had won in 2014.</p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://zisuzon.com/projects/staffindia/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -239,12 +259,12 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i39.tinypic.com/2qxpdi1.jpg" alt=""></a>
+                      <a href="http://zisuzon.com/projects/car3/"><img src="img/projects/car.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Fun Project</h3>
+                          <p>I was bored, then made this.</p>
                           <p>
-                              <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
+                              <a href="http://zisuzon.com/projects/car3/" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
                       </div>
                   </div>
@@ -252,10 +272,10 @@
 
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
-                      <a href="#"><img src="http://i41.tinypic.com/6rn7np.jpg" alt=""></a>
+                      <a href="#"><img src="img/projects/androidlime.jpg" alt=""></a>
                       <div class="caption">
-                          <h3>Feature Label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          <h3>Android Lime</h3>
+                          <p>Design for an Android Teacher's youtube channel.</p>
                           <p>
                               <a href="#" class="btn btn-primary explore-btn">EXPLORE</a>
                           </p>
@@ -426,6 +446,16 @@
 
       <script src="js/vendor/typed.min.js"></script>
 
+      <!-- smooth scroll -->
+      <script>
+        var $root = $('html, body');
+        $('a').click(function() {
+            $root.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+            return false;
+        });
+      </script>
       <!-- HEADER -->
       <script>
          $(function(){
@@ -459,6 +489,13 @@
               clientId: '6d0dfb55bc8b471082fbd26b69326e0b'
           });
           feed.run();
+      </script>
+
+      <!-- Float Menu -->
+      <script>
+        $('.float-nav').click(function() {
+          $('.main-nav, .menu-btn').toggleClass('active');
+        });
       </script>
       
     </body>
